@@ -21,26 +21,25 @@
 # 💡 Hint: Convert the number to a string and iterate over each digit or use modulus and division.
 
 # 🔹 Problem 1: Reverse a String
-def reverse_string(s: str):
+def rev_string(s: str):
     
     return s[::-1]
-result = reverse_string("hello") 
+result = rev_string("hello") 
 
 print(result) 
 
 
 # 🔹 Problem 2: Count Vowels in a String
 
-def count_vowels(s):
-    vowels = {"a", "e", "i", "o", "u"}  # Set of vowels
+def count_vows(s):
+    vowels = {"a", "e", "i", "o", "u"} 
     count = 0
-    for char in s.lower():  # Convert to lowercase for case-insensitive check
+    for char in s.lower():  
         if char in vowels:
             count += 1
     return count
 
-# Example usage:
-result = count_vowels("Apple") 
+result = count_vows("Apple") 
 print(result)  
 
 # 🔹 Problem 3: Sum of Digits
